@@ -23,8 +23,8 @@ class Timer extends Component {
         const { time } = this.props;
         return (
             <View style={{ alignSelf: 'center' }}>
-                <Text style={time/60 > 20  ? styles.red: styles.pink}>{secondesConvertion(time)}</Text>
                 <Text style={styles.description}>{this.props.work ? "SESSION DE TRAVAIL !" : "SESSION DE PAUSE !"}</Text>
+                <Text style={time/60 > 20  ? styles.red: styles.pink}>{secondesConvertion(time)}</Text>
             </View>
         );
       }
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
       },
     pink: {
-        color: 'pink',
+        color: '#211A1A',
         fontSize: 130,
         fontWeight: 'bold',
       },
